@@ -78,7 +78,7 @@ const login = async (req, res, next) => {
 };
 
 const logout = async (req, res, next) => {
-  const { token } = req.body;
+  const { token } = req.cookies['jwt'];
   
   try {
     // 14. code untuk menghilangkan token dari cookies dan mengembalikan pesan "sudah keluar dari aplikasi"
