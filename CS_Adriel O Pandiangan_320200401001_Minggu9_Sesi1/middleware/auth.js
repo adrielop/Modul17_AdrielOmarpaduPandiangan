@@ -10,7 +10,7 @@ const Auth = {
     //untuk kebutuhan frontend
     //const {token} = req.body
     
-    const token = req.body.token
+    const {token} = req.body.token
     
     console.log(token)
 
