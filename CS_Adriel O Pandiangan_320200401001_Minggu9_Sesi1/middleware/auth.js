@@ -8,7 +8,7 @@ const Auth = {
     //const token = req.cookies['jwt'];
     
     //untuk kebutuhan frontend
-    const token = req.body
+    const {token} = req.body
     
     console.log(token)
 
