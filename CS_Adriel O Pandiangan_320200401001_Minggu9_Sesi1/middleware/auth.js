@@ -5,7 +5,7 @@ const config = process.env;
 const Auth = {
   verifyToken(req, res, next) {
     //const token = req.cookies.jwt;
-    const {token} = req.cookies['jwt'];
+    const token = req.cookies['jwt'];
     console.log(token)
 
 
