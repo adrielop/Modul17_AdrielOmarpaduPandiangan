@@ -5,10 +5,13 @@ const config = process.env;
 const Auth = {
   verifyToken(req, res, next) {
     //untuk kebutuhan postman
-    //const tokenPM = req.cookies['jwt'];
+    const tokenPM = req.cookies['jwt'];
     
     //untuk kebutuhan frontend
-    const {token} = req.body;
+    //const {token} = req.body;
+    if((tokenPM = "" || !tokenPM)){
+      const {token} = req.body;
+    }
     
  
     
